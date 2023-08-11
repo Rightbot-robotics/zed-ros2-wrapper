@@ -12,4 +12,10 @@
         depth:
             min_depth: 0.2 # Min: 0.2, Max: 3.0
             max_depth: 10.0 # Max: 40.0
-
+        pos_tracking:
+            pos_tracking_enabled: false # True to enable positional tracking from start            
+            imu_fusion: false # enable/disable IMU fusion. When set to false, only the optical odometry will be used.
+            publish_tf: false # [usually overwritten by launch file] publish `odom -> base_link` TF
+            publish_map_tf: false # [usually overwritten by launch file] publish `map -> odom` TF
+            publish_imu_tf: false # [usually overwritten by launch file] enable/disable the IMU TF broadcasting
+            base_frame: "base_footprint" 
