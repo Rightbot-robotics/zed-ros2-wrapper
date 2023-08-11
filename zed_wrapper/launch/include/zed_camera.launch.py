@@ -195,11 +195,11 @@ def generate_launch_description():
                 description='Enable URDF processing and starts Robot State Published to propagate static TF.'),
             DeclareLaunchArgument(
                 'publish_tf',
-                default_value='true',
+                default_value='false',
                 description='Enable publication of the `odom -> base_link` TF.'),
             DeclareLaunchArgument(
                 'publish_map_tf',
-                default_value='true',
+                default_value='false',
                 description='Enable publication of the `map -> odom` TF. Note: Ignored if `publish_tf` is False.'),
             DeclareLaunchArgument(
                 'xacro_path',
